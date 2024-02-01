@@ -17,3 +17,158 @@
 /* Colores */
 
 /* ******************************** */
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}
+
+.background-svg {
+  grid-column: span 22;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background: url('../svg/background.svg') center/cover no-repeat;
+}
+
+.main-title {
+
+  grid-column: 10/15;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cabra-svg {
+  grid-row: 2;
+  grid-column: 2/7;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linea-medio {
+  grid-row: 2;
+  grid-column: 8/17;
+  border: solid 2px white;
+  place-self: center;
+  width: 100%;
+}
+
+.corazon-svg {
+  grid-row: 2;
+  grid-column: 8/17;
+  /* Ajusta estas propiedades según sea necesario */
+
+  place-self: center;
+
+}
+
+.snake-svg {
+
+  grid-row: 1;
+  grid-column: 18/21;
+
+  place-self: center;
+}
+
+.rabbit-svg {
+
+  grid-row: 2;
+  grid-column: 18/21;
+
+  place-self: center;
+}
+
+.pig-svg {
+
+  grid-row: 3;
+  grid-column: 18/21;
+
+  place-self: center;
+
+}
+
+/* Index .html */
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  min-height: 100vh;
+}
+
+.rooster-svg-index {
+
+  grid-row: 2;
+  grid-column: 5/7;
+
+  place-self: center;
+
+}
+
+.snake-svg-index {
+  grid-row: 2;
+  grid-column: 8/10;
+
+  place-self: center;
+}
+
+.cabra-svg-index {
+
+  grid-row: 2;
+  grid-column: 10/15;
+  place-self: center;
+
+  height: 85%;
+  object-fit: cover;
+}
+
+.rabbit-svg-index {
+
+
+  grid-row: 2;
+  grid-column: 15/17;
+  place-self: center;
+
+}
+
+.pig-svg-index {
+
+  grid-row: 2;
+  grid-column: 18/20;
+  place-self: center;
+
+}
+
+.enlace-cabra {
+
+  grid-row: 3;
+  grid-column: 10/15;
+  place-self: center;
+  border: 3px solid #FFF;
+  width: 100%;
+
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
